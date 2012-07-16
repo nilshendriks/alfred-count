@@ -1,0 +1,4 @@
+query='{query}'
+echo "Counted: $query"
+echo "Characters: ${#query}"
+i=0; for token in $query; do "${#token} "; i=$((i+1)); done; echo "Words: $i"
